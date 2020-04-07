@@ -1,6 +1,6 @@
 .brew_Index{
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(beer.jpg),url(fiveClass.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(beer.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -20,11 +20,12 @@ h1{
 
 .search_field{
     height: 50px;
-    margin: 2px;
-   padding: 10px; 
+    margin: 5px;
+    padding: 10px; 
     border: none;
     border-radius: 25px;
     outline: none;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .liquor{
@@ -42,7 +43,9 @@ width: 400px;
     border: none;
     background: #ffeb3b;
     color: #000;
+    font-size: medium;
     border-radius: 25px;
+    font-family: 'Permanent Marker', cursive;
 
 }
 .search_btn:hover{

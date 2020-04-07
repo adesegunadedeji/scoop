@@ -7,7 +7,6 @@ class brewIndex extends Component{
         super();
         this.state = {
             search: " ",
-            beerList: {}
         }
     }
 
@@ -18,28 +17,25 @@ class brewIndex extends Component{
       }
 
     //getBeer Based on User Input
-    getBeer = async(search)=>{
-        try {
-            const brewedSearch = await fetch (`https://api.brewerydb.com/v2/search?q=${search}&type=beer&key=`);
-            const parsedResponse = await brewedSearch.json()// Convert to JSON
-            console.log( "PARSED RESPONSE !!!!!!!!!", parsedResponse);
-        } catch (error) {
-            console.log(error)  
-        }
+    getBeer = async(search, location)=>{
+            const brewedSearch = await fetch (`https://cors-anywhere.herokuapp.com/https://api.brewerydb.com/v2/search?q=${search}&type=beer&key=${process.env.REACT_APP_BREWERYDBKEY}`);
+            const parsedResponse = await brewedSearch.json();
+            console.log(parsedResponse);
     }
-
+    
     //HANDLECHANGE  FUNCTIONS
     handleChange =(e)=>{
         console.log(e.target.value)
          this.setState({
-             parsedResponse: e.target.value
+             search: e.target.value,
          })
+console.log("This.state", this.state)
      }
-     
+     //HANDLESUBMIT FUNCTIONS
      handleSubmit=(e)=>{
         console.log("SEARCH BUTTON CLICKED")
         e.preventDefault();
-       this.getBeer(this.state)
+       this.getBeer(this.state.search)
     }
     render(){
         return(
@@ -54,9 +50,7 @@ class brewIndex extends Component{
             </form>
         </div>)
     }
-
 }
-
 
 export default brewIndex 
 
