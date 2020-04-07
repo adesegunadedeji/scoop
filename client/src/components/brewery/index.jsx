@@ -35,7 +35,7 @@ class brewIndex extends Component{
              parsedResponse: e.target.value
          })
      }
-
+     
      handleSubmit=(e)=>{
         console.log("SEARCH BUTTON CLICKED")
         e.preventDefault();
