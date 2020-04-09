@@ -1,28 +1,26 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './index.css'
 
-
-function Navbar(){
+export default function Navbar(){
 
     return (
         <div className="Navbar">
             <nav>
                 <input type="checkbox" id="check"/>
-                <label for="check" class="check_btn">
+                <label for="check" className="check_btn">
                     <i className="fas fa-bars"></i>
                 </label>
                 <label className="logo">Lets Brew </label>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="brewery">Brewery</a></li>
-                    <li><a href="#">IceCream</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/maps">Maps</Link></li>
+                    <li><Link to="/brewery">Brewery</Link></li>
+                    <li><Link to="/icecream">IceCream</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
 
         </div>
     )
 }
-
-export default Navbar
