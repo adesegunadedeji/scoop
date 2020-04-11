@@ -17,7 +17,7 @@ class brewIndex extends Component{
       }
 
     //getBeer Based on User Input
-    getBeer = async(search, location)=>{
+    getBeer = async(search)=>{
             const brewedSearch = await fetch (`https://cors-anywhere.herokuapp.com/https://api.brewerydb.com/v2/search?q=${search}&type=beer&key=${process.env.REACT_APP_BREWERYDBKEY}`);
             const parsedResponse = await brewedSearch.json();
             console.log(parsedResponse);

@@ -57,3 +57,7 @@ width: 400px;
     background: rgba(0,0,0,0.5);
     padding: 30px;
 }
+
+ul, li{
+  list-style: none;
+}
