@@ -1,47 +1,28 @@
-import React, { useState } from 'react';
-// import './index.css';
-// const Listings = props => {
-//     const [profileState, setProfileState] = useState(props);
-//    //console.log(profileState, "Profile state")
-//     //console.log(props.location.state);
-//     const listings = props.location.state.map((listings)=>{
-//         return(
-//             <li key = {listings.id}> 
-//     <h1>{listings.style.descriptions}</h1>
-//             </li>
-//         )
-//     })
-//     return(
-//         <div> 
-//                <div>
-//                    <h1 style={{color: "red"}}>Test</h1>
-               
-//                <ul>
-//                    {listings}
-//                    </ul></div> 
-//         </div>
-//     )
-// }
-export default function Listings (props){
+import React, { useState} from 'react';
+ import './listings.css';
+const Listings = props => {
      const [profileState, setProfileState] = useState(props);
-     console.log(profileState.location.state[0].name, "PROPS")
-    // const mappedValue = profileState.map((data)=>{
-    //     console.log(data)
-    //     return (
-    //         <li key = {data.id}>
-    //             <h1>{data.name}</h1>
-    //         </li>
-    //     )
-
-    // });
+     const Value = profileState.location.state;
+     console.log(Value, "VALUE OF PROPS");
+    const mappedValue = Object.entries(Value).map(([key, index]) => {
+        // Pretty straightforward - use key for the key and index for the value.
+        // Just to clarify: unlike object destructuring, the parameter names don't matter here.
+console.log(key, "KEY");
+console.log(index, "INDEX")
+return (
+    <li key = {key}>
+        <h4>{index.name}</h4>
+    </li>
+)
+    })    
     return (
         <div>
             <h1 style={{color: "red"}}>test</h1>
-            {/* <ul>
+            <ul>
               {mappedValue}
-          </ul> */}
-
+          </ul>
         </div>
     )
-
 }
+
+export default Listings

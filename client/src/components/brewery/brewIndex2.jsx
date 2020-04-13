@@ -3,7 +3,7 @@ import {Redirect, useParams} from 'react-router-dom';
 
 export default function IndexTest(){
 const[value, setValue] = useState("");
-const[List, setList] = useState({});
+const[List, setList] = useState([]);
 
 
 const getBeer = async (search)=>{
@@ -30,8 +30,8 @@ const handleSubmit = (e) => {
     console.log(value, "Input Value");
     getBeer(value);
 }
-let { slug } = useParams();
-console.log(slug);
+//let { slug } = useParams();
+// console.log(slug);
 
 return (
     <div className="brew_Index">
