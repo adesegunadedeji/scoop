@@ -6,7 +6,7 @@ export default function IndexMap(){
 
   useEffect(() => {
     const getData = async ()=>{
-        const url =  `https://cors-anywhere.herokuapp.com/https://api.brewerydb.com/v2/breweries?withAlternateNames=Y&withLocations=Y&withSocialAccounts=Y&key=${process.env.REACT_APP_BREWERYDBKEY}`
+        const url =  `https://cors-anywhere.herokuapp.com/https://api.brewerydb.com/v2/breweries?withAlternateNames=Y&withLocations=Y&key=${process.env.REACT_APP_BREWERYDBKEY}`
         console.log(url)
         try {
             const response = await fetch (url,{

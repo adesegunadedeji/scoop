@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
+import {Link} from 'react-router-dom'
 import './index.css'
 
-class Home extends Component {
-
-  
-  render(){
+function Home () {
   return (
-    <div className="Home_Page">
-    <h1> Home Component</h1>
+    <div className="home_Page">
+      <div className="button_div">
+     <button className="cream_btn"><Link to="/icecream">Ice Cream</Link></button>
+    <button className = "brew_btn"><Link to="/brewery">Brewery</Link></button>
+    </div>
     </div>
   );
-}
 }
 
 export default Home

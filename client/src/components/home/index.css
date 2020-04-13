@@ -1,3 +1,52 @@
-h1{
-    color: black;
+
+.home_Page{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Icecream.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
 }
+
+.cream_btn{
+    height: 50px;
+    padding: 20px 50px; 
+    width: 200px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 20px;
+    align-content: center;
+
+}
+.brew_btn{
+    margin: 10px;
+    height: 50px;
+    padding: 20px 50px; 
+    width: 200px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+    border-radius: 20px;
+    align-content: center;
+
+}
+
+
+.brew_btn:hover, .cream_btn:hover{
+    background: grey;
+    color: black;
+    cursor: pointer;
+}
+.button_div{
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+}
+
+

@@ -7,17 +7,15 @@
     justify-content: center;
     align-items: center;
     font-family: 'Permanent Marker', cursive;
-
 }
 
 h1{
-    color: #fff;
+    color: black;
     margin-bottom: 70px;
     font-size: 45px;
     letter-spacing: 2px;
     text-align: center;
 }
-
 .search_field{
     height: 50px;
     margin: 5px;
@@ -34,7 +32,6 @@ width: 400px;
 
 .location{
     width: 200px;
-
 }
 .search_btn{
     height: 50px;
