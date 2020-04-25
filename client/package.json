@@ -10,13 +10,15 @@
     "antd": "^4.1.1",
     "dotenv": "^8.2.0",
     "google-map-react": "^1.1.7",
+    "mdbreact": "^4.25.6",
     "react": "^16.13.1",
     "react-autocomplete": "^1.8.1",
     "react-dom": "^16.13.1",
     "react-google-places-autocomplete": "^2.0.2",
     "react-places-autocomplete": "^7.2.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "reactstrap": "^8.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

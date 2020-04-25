@@ -8,3 +8,16 @@ li {
       font-size: 16px;
       color: black;
   }
+
+  .ReadMore{
+      float:right;
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+  }
+
+  .ReadMore:hover{
+    text-decoration: none;
+    color: white;
+    cursor: pointer
+}
