@@ -1,6 +1,5 @@
 import React, { useState} from 'react';
-import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, 
-    MDBCol} from 'mdbreact';
+import {Card, Button, CardImg, CardTitle, CardText,Col, Row, CardBody} from 'reactstrap';
  import './listings.css';
 import ModalPage from './modal';
 const Listings = (props) => {
@@ -15,32 +14,32 @@ const Listings = (props) => {
 // console.log(index, "INDEX")
 return (
    
-    <MDBCol md='4' key = {key}>
-    <MDBCard>
-      <MDBCardImage
+    <Col md='4' key = {key}>
+    <Card>
+      <CardImg
         top
         src = "https://images.pexels.com/photos/1862/summer-sunshine-alcohol-drink.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         overlay='white-slight'
         hover
         waves
         alt='MDBCard image cap'/>
-      <MDBCardBody className='elegant-color white-text rounded-bottom'>
-        <MDBCardTitle>{index.name}</MDBCardTitle>
+      <CardBody className='elegant-color white-text rounded-bottom'>
+        <CardTitle>{index.name}Lets Test this Crap</CardTitle>
         <hr className='hr-light' />
-        <MDBCardText className='white-text'>
+        <CardText className='white-text'>
         Like what you see or interested in our beers?
-        </MDBCardText>
+        </CardText>
         <ModalPage Value= {Value}/>
-      </MDBCardBody>
-    </MDBCard>
-  </MDBCol>
+      </CardBody>
+    </Card>
+  </Col>
 )
     })    
     return (
         <div>
-             <MDBRow>
+             <Row>
               {mappedValue}
-              </MDBRow>
+              </Row>
         </div>
     )
 }

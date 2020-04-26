@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.1.1",
+    "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "google-map-react": "^1.1.7",
     "mdbreact": "^4.25.6",

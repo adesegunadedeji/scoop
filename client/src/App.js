@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-
 import {Route, Switch} from 'react-router-dom';
 import IndexMap from './components/brewery/brewIndex3';
 import Home from './components/home/index';

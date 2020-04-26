@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 const ModalPage = (props) => {
-    console.log(props, "PROPS in MODAL");
+   
   const {
     buttonLabel,
     className
   } = props;
 
+
+  console.log(props, "PROPS in MODAL");
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
@@ -18,7 +20,8 @@ const ModalPage = (props) => {
       <Modal isOpen={modal} fade={false} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>{props.name} Test</ModalHeader>
         <ModalBody>
-      {props.style.description}
+      jfjf
+    
         </ModalBody>
         <ModalFooter>
           <Button color="primary" onClick={toggle}>Do Something</Button>{' '}
