@@ -1,5 +1,6 @@
-# BrewedAwakening App
+# Giphy App
 
 ## Idea 
-This Web Application integrates the BrewedDB 
-PLAYING WITH THE GOOGLE API PLACES FUNCTIONALITY
+This Web Application integrates the Giphy API with the GOOGLE API. 
+
+

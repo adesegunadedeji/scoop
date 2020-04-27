@@ -1,4 +1,4 @@
-.brew_Index{
+.index_Page{
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(beer.jpg);
     background-size: cover;
@@ -26,7 +26,7 @@ h1{
     font-family: 'Permanent Marker', cursive;
 }
 
-.liquor{
+.giphy{
 width: 400px;
 }
 
@@ -55,6 +55,10 @@ width: 400px;
     padding: 30px;
 }
 
-ul, li{
+/* ul, li{
   list-style: none;
+} */
+
+img{
+    width:500px;
 }
